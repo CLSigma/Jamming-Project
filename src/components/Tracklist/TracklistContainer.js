@@ -1,15 +1,18 @@
 import "./TracklistContainer.css";
-import Tracklist from "./Tracklist";
-import Track from "../Track/Track";
-function TracklistContainer(){
+import Track from '../Track/Track';
+
+function TracklistContainer(props){
+  function sendId(id){
+    props.sendId(id);
+  }
     return (
-      <div className="tracklistContainer">
+      <div>
         {
-          Tracklist.map(item => (
-            <Track title={item.title} author={item.author} album={item.album} id={item.id}/>
+          props.Tracklist.map(song => (
+            <Track key={song[0]} id={song[0]} title={song[1]} author={song[2]} album={song[3]} sendId={sendId} isOnPlaylist={true} />
           ))
         }
-      </div>  
+      </div>
     );
 }
 

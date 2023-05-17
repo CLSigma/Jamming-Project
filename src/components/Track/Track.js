@@ -1,10 +1,13 @@
 import './Track.css';
 function Track(props){
-    function addToTracklist(){
-
+    function sendData(){
+        props.sendData(props.id, props.title, props.author, props.album);
+    }
+    function sendId(){
+        props.sendId(props.id);
     }
     return (
-        <div className="trackContainer" key={props.id}>
+        <div className="trackContainer">
             <div className="trackInfoContainer">
                 <div className="trackTitle">
                     {props.title}
@@ -17,8 +20,8 @@ function Track(props){
                     {props.album}
                 </div>
             </div>
-            <div className="trackAddContainer" onClick={addToTracklist}>
-                +
+            <div className="trackAddContainer" onClick={props.isOnPlaylist ? sendId : sendData}>
+                {props.isOnPlaylist ? "-" : "+"}
             </div>
         </div>
     );

@@ -1,13 +1,16 @@
-import "./SearchResultsContainer.css";
+import './SearchResultsContainer.css';
 import Track from '../Track/Track';
-import Songs from './testResults';
-function SearchResultsContainer(){
+
+function SearchResultsContainer(props){
+  function sendData(id, title, author, album){
+    props.addToPlaylist(id, title, author, album);
+  }
     return (
       <div className="searchResultsContainer">
         <h2>Results</h2>
         {
-          Songs.map(item => (
-            <Track title={item.title} author={item.author} album={item.album} id={item.id}/>
+          props.Songs.map(item => (
+            <Track title={item.title} author={item.author} album={item.album} key={item.id} id={item.id} sendData={sendData} isOnPlaylist={false}/>
           ))
         }
       </div>  

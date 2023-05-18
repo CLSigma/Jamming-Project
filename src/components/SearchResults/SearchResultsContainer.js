@@ -9,8 +9,8 @@ function SearchResultsContainer(props){
       <div className="searchResultsContainer">
         <h2>Results</h2>
         {
-          props.Songs.map(item => (
-            <Track title={item.title} author={item.author} album={item.album} key={item.id} id={item.id} sendData={sendData} isOnPlaylist={false}/>
+          props.searchResult.map(item => (
+          <Track title={item.name} author={item.artists[0].name} album={item.album.name} key={item.id} id={item.id} sendData={sendData} isOnPlaylist={false}/>
           ))
         }
       </div>  

@@ -22,3 +22,23 @@ h2{
 .nameInput:focus-visible{
     outline: rgb(97, 62, 255) solid 1px;
 }
+.logInToSpotifyButton{
+    background: rgb(82, 43, 255);
+    color: white;
+    border-radius: 1.9rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1rem;
+    width: 36%;
+    margin: 0.8rem auto;
+    opacity: 0.9;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    font-size: 13px;
+    display: block;
+    text-align: center;
+}
+.logInToSpotifyButton:hover{
+    background: rgb(97, 62, 255);
+}

@@ -1,10 +1,10 @@
 import './Track.css';
 function Track(props){
     function sendData(){
-        props.sendData(props.id, props.title, props.author, props.album);
+        props.sendData(props.id, props.title, props.author, props.album, props.uri);
     }
     function sendId(){
-        props.sendId(props.id);
+        props.sendId(props.id, props.uri);
     }
     return (
         <div className="trackContainer">

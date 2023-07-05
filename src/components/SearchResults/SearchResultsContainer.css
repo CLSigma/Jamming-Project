@@ -1,0 +1,12 @@
+.searchResultsContainer{
+    width: 43%;
+    margin: 1rem;
+    background: rgba(31, 10, 126, 0.705);
+    padding: 1.3rem;
+}
+h2{
+    margin: 0;
+    color: white;
+    font-weight: 700;
+    font-size: 28px;
+}

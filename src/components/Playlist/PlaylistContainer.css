@@ -1,0 +1,44 @@
+.playlistContainer{
+    width: 43%;
+    margin: 1rem;
+    background: rgba(31, 10, 126, 0.705);
+    padding: 1.3rem;
+    height: 100%;
+}
+h2{
+    margin: 0;
+    color: white;
+    font-weight: 700;
+    font-size: 28px;
+}
+.nameInput{
+    margin: 1rem 0;
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 1px solid rgb(187, 187, 187);
+    background: rgb(219, 219, 219);
+    width: 70%;
+}
+.nameInput:focus-visible{
+    outline: rgb(97, 62, 255) solid 1px;
+}
+.logInToSpotifyButton{
+    background: rgb(82, 43, 255);
+    color: white;
+    border-radius: 1.9rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1rem;
+    width: 36%;
+    margin: 0.8rem auto;
+    opacity: 0.9;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    font-size: 13px;
+    display: block;
+    text-align: center;
+}
+.logInToSpotifyButton:hover{
+    background: rgb(97, 62, 255);
+}
